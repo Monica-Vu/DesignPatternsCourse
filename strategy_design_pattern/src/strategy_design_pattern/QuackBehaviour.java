@@ -1,5 +1,5 @@
 package strategy_design_pattern;
 
-public interface QuackBehaviour {
+public interface QuackBehavior {
 	public void quack(); 
 }
