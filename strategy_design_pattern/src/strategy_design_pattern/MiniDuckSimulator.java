@@ -11,8 +11,8 @@ public class MiniDuckSimulator {
 		// delegate to flyBehaviour object set in ModelDuck's constructor
 		model.performFly(); 
 		
-		// invokes model's inherited behaviour setter model
-		model.setFlyBehaviour(new FlyRocketPowered());
+		// invokes model's inherited behavior setter model
+		model.setFlyBehavior(new FlyRocketPowered());
 		
 		model.performFly();
 	}

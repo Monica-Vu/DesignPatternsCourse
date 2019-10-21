@@ -1,8 +1,8 @@
 package strategy_design_pattern;
 
 public abstract class Duck {
-	FlyBehaviour flyBehaviour; 
-	QuackBehaviour quackBehaviour;
+	FlyBehavior flyBehavior; 
+	QuackBehavior quackBehavior;
 	
 	public Duck() {
 		
@@ -10,13 +10,13 @@ public abstract class Duck {
 	
 	public abstract void display();
 	
-	// delegate behaviour class for performFly and perform Quack
+	// delegate behavior class for performFly and perform Quack
 	public void performFly() {
-		flyBehaviour.fly();
+		flyBehavior.fly();
 	}
 	
 	public void performQuack() {
-		quackBehaviour.quack();
+		quackBehavior.quack();
 	}
 	
 	public void swim() {
@@ -24,11 +24,11 @@ public abstract class Duck {
 	}
 	
 	// as expected, the setters will allow us to change the behaviour while the program is running
-	public void setFlyBehaviour(FlyBehaviour fb) {
-		flyBehaviour = fb; 
+	public void setFlyBehavior(FlyBehavior fb) {
+		flyBehavior = fb; 
 	}
 	
-	public void setQuackBehaviour(QuackBehaviour qb) {
-		quackBehaviour = qb; 
+	public void setQuackBehaviour(QuackBehavior qb) {
+		quackBehavior = qb; 
 	}
 }
